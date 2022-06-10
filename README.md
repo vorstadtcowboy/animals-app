@@ -19,8 +19,8 @@ Die Seite wird neu geladen, wenn Du Änderungen vornimmst.\
 
 JSON Server läuft auf [http://localhost:3004](http://localhost:3004).\
 
-Wenn Du [http://localhost:3000/animals/] (http://localhost:3000/animals/) aufrufst, erhälst Du einen Array mit allen Tieren.\
-Wenn Du [http://localhost:3000/animals/1] (http://localhost:3000/animals/1) aufrufst, erhälst Du das Tier mit der ID 1.
+Wenn Du [http://localhost:3000/animals/](http://localhost:3000/animals/) aufrufst, erhälst Du einen Array mit allen Tieren.\
+Wenn Du [http://localhost:3000/animals/1](http://localhost:3000/animals/1) aufrufst, erhälst Du das Tier mit der ID 1.
 
 ### `npm test`
 
