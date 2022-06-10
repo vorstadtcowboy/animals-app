@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
 
 export const Header = styled.header`
   background: #fff;
@@ -16,7 +17,7 @@ export const LogoImage = styled.img`
   height: auto;
 `;
 
-export const NaviLink = styled.a`
+export const NaviLink = styled(NavLink)`
   color: #000;
   text-decoration: none;
   padding: 1rem;
@@ -26,6 +27,10 @@ export const NaviLink = styled.a`
 
   &:hover {
     color: grey;
+  }
+
+  &.active {
+    color: turquoise;
   }
 
   @media (min-width: 37.5em) {
@@ -64,8 +69,10 @@ export const DropdownMenu = () => {
       </button>
 
       <Nav isOn={isOn} aria-expanded={isOn}>
-        <NaviLink href="/hunde">Hunde</NaviLink>
-        <NaviLink href="/katzen">Katzen</NaviLink>
+        <NaviLink to="/">Home</NaviLink>
+        <NaviLink to="/hunde">Hunde</NaviLink>
+        <NaviLink to="/katzen">Katzen</NaviLink>
+        <NaviLink to="/create">Neues Tier</NaviLink>
       </Nav>
     </div>
   );

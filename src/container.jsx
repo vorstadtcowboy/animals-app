@@ -13,9 +13,9 @@ const Container = () => {
     setIndex(counter);
   };
 
-  //Side Effects -  UseEffect ist ein guter Ort Daten Fetchen
+  //Side Effects -  UseEffect ist ein guter Ort, um Daten fetchen
   useEffect(() => {
-    //fetch axios
+    //fetch oder axios hier drin
     document.title = `Hilf ${animalData[index].species} ${animalData[index].name} `;
   }, [index]);
 
@@ -34,11 +34,3 @@ const Container = () => {
 };
 
 export default Container;
-
-//unterhalb des Export Statements styled Component
-
-/**
- *
- * .class .class2 = class2 ist in .class
- * .class.jonny = hat beides
- */

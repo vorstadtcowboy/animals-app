@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
+//Test
 function Test(props) {
-  //const string = `Du bist aus ${city}`;
   const { name, city: stadt, array, show, counter: zahl } = props;
 
   const liste = array.map((item, index) => <li key={index}>{item}</li>);

@@ -41,6 +41,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: #fff;
 }
 
 /* A elements that don't have a class get default styles */
@@ -181,8 +182,24 @@ button:focus {
   color: #000;
 }
 
+.tierlink {
+  color: #000;
+  text-decoration: none;
+}
+
 @media (min-width: 600px) {
   .menu {
     display: none;
   }
+
+  .row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.error {
+  color: red;
+  display: block;
 }
